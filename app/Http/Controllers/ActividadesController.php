@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Actividades;
+
+
+class ActividadesController extends Controller
+{
+
+    public function index()
+    {
+
+        $actividades = Actividades::all();
+        return view('actividades.index', compact('actividades'));
+    }
+
+    public function create()
+    {
+        //
+    }
+
+
+    public function store(Request $request)
+    {
+        //
+    }
+
+
+    public function show(string $id)
+    {
+        //
+    }
+
+
+    public function edit(string $id)
+    {
+        //
+    }
+
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+
+    public function destroy(string $id)
+    {
+        //
+    }
+}

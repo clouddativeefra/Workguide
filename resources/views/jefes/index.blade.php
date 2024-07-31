@@ -1,3 +1,4 @@
+@include('layouts.header')
 <link href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css" rel="style">
 <!DOCTYPE html>
 <html>
@@ -52,7 +53,7 @@
         $('#jefes').dataTable();
 
     });
-    
+
   </script>
     </div>
 

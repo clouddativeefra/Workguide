@@ -38,10 +38,10 @@
                     </button>
                 </div>
                 <div>
-                    <a class="navbar-brand brand-logo" href="index.html">
+                    <a class="navbar-brand brand-logo" href="{{ route('home') }}">
                         <img src="assets/images/logo.svg" alt="logo" />
                     </a>
-                    <a class="navbar-brand brand-logo-mini" href="index.html">
+                    <a class="navbar-brand brand-logo-mini" href="{{ route('home') }}">
                         <img src="assets/images/logo-mini.svg" alt="logo" />
                     </a>
                 </div>
@@ -291,7 +291,7 @@
                                 <li class="nav-item"> <a class="nav-link"
                                         href="{{route('jefes.index')}}">Jefe</a></li>
                                 <li class="nav-item"> <a class="nav-link"
-                                        href="{{route('tareas.index')}}">Actividad</a></li>
+                                        href="{{route('tareas.index')}}">Tareas</a></li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="{{route('admin.index')}}">Administrador</a></li>
                             </ul>
@@ -301,13 +301,12 @@
                         <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
                             aria-controls="form-elements">
                             <i class="menu-icon mdi mdi-card-text-outline"></i>
-                            <span class="menu-title">Form elements</span>
+                            <span class="menu-title">Progresos</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="form-elements">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic
-                                        Elements</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('actividades.index') }}">Ver Actividades</a></li>
                             </ul>
                         </div>
                     </li>
@@ -389,13 +388,4 @@
                     <div class="row">
                         <div class="col-sm-12">
 
-                                    <div>
-                                        <div class="btn-wrapper">
-                                            <a href="#" class="btn btn-otline-dark align-items-center"><i
-                                                    class="icon-share"></i> Share</a>
-                                            <a href="#" class="btn btn-otline-dark"><i
-                                                    class="icon-printer"></i> Print</a>
-                                            <a href="#" class="btn btn-primary text-white me-0"><i
-                                                    class="icon-download"></i> Export</a>
-                                        </div>
-                                    </div>
+

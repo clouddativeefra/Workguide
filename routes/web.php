@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActividadesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AreasController;
 use App\Http\Controllers\JefesController;
@@ -19,6 +20,7 @@ Route::resource('areas', AreasController::class);
 Route::resource('jefes', JefesController::class);
 Route::resource('trabajadores', TrabajadoresController::class);
 Route::resource('tareas', TareasController::class);
+Route::resource('actividades', ActividadesController::class);
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('perfil', PerfilController::class)->only(['index', 'edit', 'update']);
