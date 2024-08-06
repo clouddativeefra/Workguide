@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('actividades', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->unsignedBigInteger('trabajadores_id');
+            $table->foreign('trabajadores_id')->references('id')->on('trabajadores')->onDelete('cascade');
+            $table->string('descripcion');
+            $table->text('ayuda')->nullable();
             $table->timestamps();
         });
     }
@@ -22,6 +27,12 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('actividades', function (Blueprint $table) {
+            $table->dropForeign(['trabajadores_id']);
+        });
+
+
+
         Schema::dropIfExists('actividades');
     }
 };

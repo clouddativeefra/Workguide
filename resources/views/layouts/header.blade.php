@@ -285,15 +285,15 @@
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link"
-                                        href="{{route('trabajadores.index') }}">Trabajador</a></li>
+                                        href="{{route('admin.index')}}">Administrador</a></li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="{{route('areas.index') }}">Area</a></li>
+                                        <li class="nav-item"> <a class="nav-link"
+                                                href="{{route('jefes.index')}}">Jefe</a></li>
                                 <li class="nav-item"> <a class="nav-link"
-                                        href="{{route('jefes.index')}}">Jefe</a></li>
+                                        href="{{route('trabajadores.index') }}">Trabajador</a></li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="{{route('tareas.index')}}">Tareas</a></li>
-                                <li class="nav-item"> <a class="nav-link"
-                                        href="{{route('admin.index')}}">Administrador</a></li>
                             </ul>
                         </div>
                     </li>
